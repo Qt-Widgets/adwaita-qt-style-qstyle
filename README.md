@@ -1,11 +1,21 @@
 adwaita-qt
 ==========
 
-A native style to bend Qt4 and Qt5 applications to look like they belong into GNOME Shell.
+A native style to bend Qt5/Qt6 applications to look like they belong into GNOME Shell.
 
-![Widget Factory](/screenshots/widgets.png)
+This style provides all four variants of GTK Adwaita theme:
 
-![KCalc](/screenshots/kcalc.png)
+* Adwaita
+![Widget Factory](data/screenshots/widgets-adwaita.png)
+
+* Adwaita-dark
+![Widget Factory](data/screenshots/widgets-adwaita-dark.png)
+
+* HighContrast
+![Widget Factory](data/screenshots/widgets-highcontrast.png)
+
+* HighContrastInverse
+![Widget Factory](data/screenshots/widgets-highcontrastinverse.png)
 
 ## How to compile
 
@@ -16,7 +26,7 @@ So for example, the whole compilation process could look like this:
 ```
 mkdir build
 cd build
-cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr ..
+cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr [-DUSE_QT6] ..
 make
 make install
 ```
